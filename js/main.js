@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
         var selectedfilename = $('#files').val()
         var selectedErrorType = $('#error-types').val()
 
-        $.getJSON( "../data/report.json", function(jsondata) {
+        $.getJSON( "./data/report.json", function(jsondata) {
             $('#errors').pagination('hide')
             $('.limiter1 tbody').empty()
             table_det = "<table class='lightbox-err'><tr><th style='font-weight: bold'>Serial Number</th><th style='font-weight: bold'>Git Commmit SHA</th></tr>";

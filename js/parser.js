@@ -15,7 +15,7 @@ $(document).ready(function() {
     }
   }
 
-  $.getJSON("../data/report.json", function(jd) {
+  $.getJSON("./data/report.json", function(jd) {
     total_filecontent = jd.summary.types.filecontent || 0;
     total_filesize = jd.summary.types.filesize || 0;
     total_filename = jd.summary.types.filename || 0;
